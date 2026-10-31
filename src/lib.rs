@@ -95,10 +95,9 @@ pub fn run_simulation(total_nodes: u32, malicious_nodes_count: u32, rounds: u32,
             }
         }
         
-        if !malicious_validators_id.is_empty(){
-            total_validator_seats+= validators.len() as u32;
-            total_malicious_validator_seats+= malicious_validators_id.len() as u32;
-        }
+        total_validator_seats+= validators.len() as u32;
+        total_malicious_validator_seats+= malicious_validators_id.len() as u32;
+        
 
         for validator_id in validators.iter(){
             if !malicious_validators_id.contains(validator_id){
