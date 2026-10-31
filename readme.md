@@ -10,7 +10,7 @@ The current Decentralized Machine Learning relies on static leader election or f
 My work proposes replacing predictable leaders with a Verifiable Random Function (VRF) combined with a dynamic trust scoring system. This ensures that validator selection remains cryptographically unpredictable to attackers while favoring honest nodes.
 
 ### Proof
-This project is a Rust simulation of the same concept providing experimental proof that trust score along with VRF selection reduces the probability of selecting a malicious node in the validator committee from 30% random baseline to approximately 16.5%.
+This project is a Rust simulation of the same concept providing experimental proof that trust score along with VRF selection reduces the probability of selecting a malicious node in the validator committee from 30% random baseline to approximately 17.4%(range 16.7-18.2% over 10 runs).
 
 ### Terminology
 - **VRF** - Verifiable Random Function
